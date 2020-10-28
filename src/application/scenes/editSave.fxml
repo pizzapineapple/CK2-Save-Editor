@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.sceneControllers.editSaveController"> 
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-image: url(@../resources/images/wol.jpg);">
+         <children>
+            <ImageView fx:id="initBackgroundImage" fitHeight="480.0" fitWidth="640.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <StackPane accessibleRole="MENU_BUTTON" layoutX="51.0" layoutY="53.0" onMouseClicked="#modChar" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Find Charecter" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane accessibleRole="MENU_BUTTON" layoutX="51.0" layoutY="181.0" onMouseClicked="#modCB" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Edit Charecter" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane accessibleRole="MENU_BUTTON" layoutX="51.0" layoutY="444.0" onMouseClicked="#back" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Back" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <TextField fx:id="charecterSearchBox" layoutX="173.0" layoutY="55.0" />
+            <ListView fx:id="charDisplayPane" layoutX="400.0" layoutY="27.0" prefHeight="251.0" prefWidth="200.0" style="-fx-opacity: 0.5;" />
+
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

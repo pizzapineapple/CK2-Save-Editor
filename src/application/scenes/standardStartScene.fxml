@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.initSceneController">
+   <children>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="669.0" prefHeight="500.0" prefWidth="669.0" style="-fx-background-image: url(@resources/images/wol.jpg);">
+         <children>
+            <ImageView fx:id="initBackgroundImage" fitHeight="507.0" fitWidth="842.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true" />
+            
+            <fx:script>
+				var executeOnce = false;
+	
+				if(executeOnce === false) {
+					#setBackground;
+					executeOnce = true;
+				}
+	
+				else {
+				}
+
+
+			</fx:script>
+            <StackPane layoutX="252.0" layoutY="139.0" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Late Middle Ages" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane layoutX="252.0" layoutY="139.0" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Late Middle Ages" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane layoutX="252.0" layoutY="139.0" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Late Middle Ages" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane layoutX="252.0" layoutY="139.0" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Late Middle Ages" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane layoutX="252.0" layoutY="139.0" prefHeight="6.0" prefWidth="82.0">
+               <children>
+                  <Label text="Late Middle Ages" textFill="WHITE">
+                     <font>
+                        <Font name="Book Antiqua" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/button.png" />
+                     </image>
+                  </ImageView>
+                  <StackPane prefHeight="6.0" prefWidth="82.0">
+                     <children>
+                        <ImageView accessibleRole="BUTTON" fitWidth="100.0" onMouseClicked="#lateMidAges" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/images/button.png" />
+                           </image>
+                        </ImageView>
+                        <Label text="Late Middle Ages" textFill="WHITE">
+                           <font>
+                              <Font name="Book Antiqua" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

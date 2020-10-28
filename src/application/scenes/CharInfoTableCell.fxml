@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="305.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="property" layoutX="8.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Property" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="14.05078125" />
+      <TextField fx:id="textField" layoutX="58.0" layoutY="9.0" prefHeight="26.0" prefWidth="109.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="9.0" />
+   </children>
+</AnchorPane>

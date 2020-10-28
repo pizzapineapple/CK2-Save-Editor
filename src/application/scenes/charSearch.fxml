@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane accessibleText="Heo" layoutX="75.0" layoutY="14.0" prefHeight="33.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="200.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Text layoutX="55.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charecter Search" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="searchFeild" accessibleText="Charecter ID, traits, names. Seperate everything by comma." layoutX="101.0" layoutY="48.0" />
+      <GridPane layoutX="1.0" layoutY="91.0" prefHeight="91.0" prefWidth="350.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <MenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" text="Ruler">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Emperor" />
+                <MenuItem mnemonicParsing="false" text="King" />
+                  <MenuItem mnemonicParsing="false" text="Grand Duke" />
+                  <MenuItem mnemonicParsing="false" text="Duke" />
+                  <MenuItem mnemonicParsing="false" text="Count" />
+                  <MenuItem mnemonicParsing="false" text="Unlanded" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="76.0" text="Gender" GridPane.rowIndex="1">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Men" />
+                  <MenuItem mnemonicParsing="false" text="Women" />
+               </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="In Prison" GridPane.rowIndex="2">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Yes" />
+                <MenuItem mnemonicParsing="false" text="No" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Religion" GridPane.columnIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Same Group" />
+                <MenuItem mnemonicParsing="false" text="Mine" />
+                  <MenuItem mnemonicParsing="false" text="Other" />
+                  <MenuItem mnemonicParsing="false" text="Pagan" />
+                  <MenuItem mnemonicParsing="false" text="Christian" />
+                  <MenuItem mnemonicParsing="false" text="Indian" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Culture" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Mine" />
+                <MenuItem mnemonicParsing="false" text="Same Group" />
+                  <MenuItem mnemonicParsing="false" text="Different" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Age" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <items>
+                <MenuItem mnemonicParsing="false" text="&gt;70" />
+                <MenuItem mnemonicParsing="false" text="50-70" />
+                  <MenuItem mnemonicParsing="false" text="40-50" />
+                  <MenuItem mnemonicParsing="false" text="20-40" />
+                  <MenuItem mnemonicParsing="false" text="16-20" />
+                  <MenuItem mnemonicParsing="false" text="0-16" />
+              </items>
+            </MenuButton>
+         </children>
+      </GridPane>
+      <TextArea fx:id="displayBox" editable="false" layoutX="76.0" layoutY="206.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
